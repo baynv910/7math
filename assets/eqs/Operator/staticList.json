@@ -1,0 +1,93 @@
+[{
+    "id"        : "plus",
+    "laTex"     : "<mo>+</mo>",
+    "name"      : "Plus",
+    "fileName"  : "Operator/Plus.png"
+},
+{
+    "id"        : "minus",
+    "laTex"     : "−",
+    "name"      : "Minus",
+    "fileName"  : "Operator/minus.png"
+},
+{
+    "id"        : "div",
+    "laTex"     : "÷",
+    "name"      : "Division Sign",
+    "fileName"  : "Operator/div.png"
+},
+{
+    "id"        : "times",
+    "laTex"     : "×",
+    "name"      : "Mutiplication Sign"
+},
+{
+    "id"        : "pm",
+    "laTex"     : "±",
+    "name"      : "Plus Minus"
+},
+{
+    "id"        : "mp",
+    "laTex"     : "∓",
+    "name"      : "Minus Plus"
+},
+{
+    "id"        : "propto",
+    "laTex"     : "∝",
+    "name"      : "Proportional To"
+},
+{
+    "id"        : "ldiv",
+    "laTex"     : "∕",
+    "name"      : "Division Slash"
+},
+{
+    "id"        : "ast",
+    "laTex"     : "∗",
+    "name"      : "Asterisk Operator"
+},
+{
+    "id"        : "circ",
+    "laTex"     : "∘",
+    "name"      : "Composite Function"
+},
+{
+    "id"        : "bullet",
+    "laTex"     : "∙",
+    "name"      : "Composite Function"
+},
+{
+    "id"        : "cap",
+    "laTex"     : "∩",
+    "name"      : "Intersection"
+},
+{
+    "id"        : "cup",
+    "laTex"     : "∪",
+    "name"      : "Union"
+},
+{
+    "id"        : "uplus",
+    "laTex"     : "⊎",
+    "name"      : "MULTISET UNION"
+},
+{
+    "id"        : "sqcap",
+    "laTex"     : "⊓",
+    "name"      : "SQUARE CAP"
+},
+{
+    "id"        : "sqcup",
+    "laTex"     : "⊔",
+    "name"      : "SQUARE CUP"
+},
+{
+    "id"        : "wedge",
+    "laTex"     : "⋀",
+    "name"      : "LOGICAL AND"
+},
+{
+    "id"        : "vee",
+    "laTex"     : "⋁",
+    "name"      : "LOGICAL OR"
+}]

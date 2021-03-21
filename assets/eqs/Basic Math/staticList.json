@@ -1,0 +1,186 @@
+[{
+    "id"        : "pm",
+    "laTex"     : "±",
+    "name"      : "Plus Minus"
+},
+{
+    "id"        : "infty",
+    "laTex"     : "∞",
+    "name"      : "Infinity"
+},
+{
+    "id"        : "equal",
+    "laTex"     : "=",
+    "name"      : "Equal"
+},
+{
+    "id"        : "neq",
+    "laTex"     : "≠",
+    "name"      : "Not Equal To"
+},
+{
+    "id"        : "approximately",
+    "laTex"     : "~",
+    "name"      : "Approximately"
+},
+{
+    "id"        : "times",
+    "laTex"     : "×",
+    "name"      : "Multiplication Sign"
+},
+{
+    "id"        : "div",
+    "laTex"     : "÷",
+    "name"      : "Division Sign"
+},
+{
+    "id"        : "factorial",
+    "laTex"     : "!",
+    "name"      : "Factorial"
+},
+{
+    "id"        : "propto",
+    "laTex"     : "∝",
+    "name"      : "Proportional To"
+},
+{
+    "id"        : "lessthan",
+    "laTex"     : "&lt;",
+    "name"      : "Less Than"
+},
+{
+    "id"        : "ll",
+    "laTex"     : "≪",
+    "name"      : "Much Less Than"
+},
+{
+    "id"        : "greaterthan",
+    "laTex"     : "&gt;",
+    "name"      : "Greater Than"
+},
+{
+    "id"        : "gg",
+    "laTex"     : "≫",
+    "name"      : "Much Greater Than"
+},
+{
+    "id"        : "leq",
+    "laTex"     : "≤",
+    "name"      : "Less Than Or Equal To"
+},
+{
+    "id"        : "geq",
+    "laTex"     : "≥",
+    "name"      : "Greater Than Or Equal To"
+},
+{
+    "id"        : "mp",
+    "laTex"     : "∓",
+    "name"      : "Minus Plus"
+},
+{
+    "id"        : "cong",
+    "laTex"     : "≅",
+    "name"      : "Approximately Equal To"
+},
+{
+    "id"        : "approx",
+    "laTex"     : "≈",
+    "name"      : "Almost Equal To (Asymptotic To)"
+},
+{
+    "id"        : "equiv",
+    "laTex"     : "≡",
+    "name"      : "Identical To"
+},
+{
+    "id"        : "forall",
+    "laTex"     : "∀",
+    "name"      : "For All"
+},
+{
+    "id"        : "complement",
+    "laTex"     : "∁",
+    "name"      : "Complement"
+},
+{
+    "id"        : "partial",
+    "laTex"     : "∂",
+    "name"      : "Partial Differential"
+},
+{
+    "id"        : "sqrt",
+    "laTex"     : "√",
+    "name"      : "Radical Sign"
+},
+{
+    "id"        : "cbrt",
+    "laTex"     : "∛",
+    "name"      : "Cube Root"
+},
+{
+    "id"        : "qdrt",
+    "laTex"     : "∜",
+    "name"      : "Fourth Root"
+},
+{
+    "id"        : "cup",
+    "laTex"     : "∪",
+    "name"      : "Union"
+},
+{
+    "id"        : "cap",
+    "laTex"     : "∩",
+    "name"      : "Intersection"
+},
+{
+    "id"        : "emptyset",
+    "laTex"     : "∅",
+    "name"      : "Empty Set"
+},
+{
+    "id"        : "percentage",
+    "laTex"     : "%",
+    "name"      : "Percentage"
+},
+{
+    "id"        : "degree",
+    "laTex"     : "°",
+    "name"      : "Degrees"
+},
+{
+    "id"        : "degf",
+    "laTex"     : "℉",
+    "name"      : "Degrees Fahreheit"
+},
+{
+    "id"        : "degc",
+    "laTex"     : "℃",
+    "name"      : "Degrees Celcius"
+},
+{
+    "id"        : "inc",
+    "laTex"     : "∆",
+    "name"      : "Increment"
+},
+{
+    "id"        : "nabla",
+    "laTex"     : "∇",
+    "name"      : "Nabla"
+},
+{
+    "id"        : "exists",
+    "laTex"     : "∃",
+    "name"      : "There exists"
+},
+{
+    "id"        : "theredoesnotexist",
+    "laTex"     : "∄",
+    "name"      : "There Does Not Exist"
+},
+{
+    "id"        : "in",
+    "laTex"     : "∈",
+    "name"      : "Element Of"
+}
+]

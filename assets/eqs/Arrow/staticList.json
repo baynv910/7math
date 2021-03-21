@@ -1,0 +1,110 @@
+[{
+    "id"        : "gets",
+    "laTex"     : "←",
+    "name"      : "Left Arrow"
+},
+{
+    "id"        : "to",
+    "laTex"     : "→",
+    "name"      : "Right Arrow"
+},
+{
+    "id"        : "uparrow",
+    "laTex"     : "↑",
+    "name"      : "Up Arrow"
+},
+{
+    "id"        : "downarrow",
+    "laTex"     : "↓",
+    "name"      : "Down Arrow"
+},
+{
+    "id"        : "leftrightarrow",
+    "laTex"     : "↔",
+    "name"      : "Left-Right Arrow"
+},
+{
+    "id"        : "updownarrow",
+    "laTex"     : "↕",
+    "name"      : "Up-Down Arrow"
+},
+{
+    "id"        : "leftdoublearrow",
+    "laTex"     : "⇐",
+    "name"      : "Left Double Arrow"
+},
+{
+    "id"        : "rightdoublearrow",
+    "laTex"     : "⇒",
+    "name"      : "Right Double Arrow"
+},
+{
+    "id"        : "updoublearrow",
+    "laTex"     : "⇑",
+    "name"      : "Up Double Arrow"
+},
+{
+    "id"        : "downdoublearrow",
+    "laTex"     : "⇓",
+    "name"      : "Down Double Arrow"
+},
+{
+    "id"        : "leftrightdoublearrow",
+    "laTex"     : "⇔",
+    "name"      : "Left-Right Double Arrow"
+},
+{
+    "id"        : "updowndoublearrow",
+    "laTex"     : "⇕",
+    "name"      : "Up Down Double Arrow"
+},
+{
+    "id"        : "longleftarrow",
+    "laTex"     : "⟵",
+    "name"      : "Long Left Arrow"
+},
+{
+    "id"        : "longrightarrow",
+    "laTex"     : "⟶",
+    "name"      : "Long Right Arrow"
+},
+{
+    "id"        : "longleftrightarrow",
+    "laTex"     : "⟷",
+    "name"      : "Long Left-Right Arrow"
+},
+{
+    "id"        : "longleftdoublearrow",
+    "laTex"     : "⟸",
+    "name"      : "Long Left Double Arrow"
+},
+{
+    "id"        : "longrightdoublearrow",
+    "laTex"     : "⟹",
+    "name"      : "Long Right Double Arrow"
+},
+{
+    "id"        : "longleftrightdoublearrow",
+    "laTex"     : "⟺",
+    "name"      : "Long Left-Right Double Arrow"
+},
+{
+    "id"        : "northeastarrow",
+    "laTex"     : "↗",
+    "name"      : "North East Arrow"
+},
+{
+    "id"        : "northwestarrow",
+    "laTex"     : "&#8598;",
+    "name"      : "North West Arrow"
+},
+{
+    "id"        : "southeastarrow",
+    "laTex"     : "↘",
+    "name"      : "South East Arrow"
+},
+{
+    "id"        : "southwestarrow",
+    "laTex"     : "↙",
+    "name"      : "South West Arrow"
+}]

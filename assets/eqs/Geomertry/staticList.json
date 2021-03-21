@@ -1,0 +1,75 @@
+[{
+    "id"        : "rightangle",
+    "laTex"     : "∟",
+    "name"      : "Right Angle"
+},
+{
+    "id"        : "angle",
+    "laTex"     : "∠",
+    "name"      : "Angle"
+},
+{
+    "id"        : "measuredangle",
+    "laTex"     : "∡",
+    "name"      : "Measured Angle"
+},
+{
+    "id"        : "sphericalangle",
+    "laTex"     : "∢",
+    "name"      : "Spherical Angle"
+},
+{
+    "id"        : "rightanglewitharc",
+    "laTex"     : "⊾",
+    "name"      : "Right Angle with Arc"
+},
+{
+    "id"        : "righttriangle",
+    "laTex"     : "⊿",
+    "name"      : "Right Triangle"
+},
+{
+    "id"        : "equalandparallelto",
+    "laTex"     : "⋕",
+    "name"      : "Equal and Parallel to"
+},
+{
+    "id"        : "perpendicularto",
+    "laTex"     : "⊥",
+    "name"      : "Perpendicular to"
+},
+{
+    "id"        : "doesnotdivide",
+    "laTex"     : "∤",
+    "name"      : "Does Not Divide"
+},
+{
+    "id"        : "parallelto",
+    "laTex"     : "∥",
+    "name"      : "Parallel to"
+},
+{
+    "id"        : "notparallelto",
+    "laTex"     : "∦",
+    "name"      : "Not Parallel To"
+},
+{
+    "id"        : "ratio",
+    "laTex"     : "∶",
+    "name"      : "Ratio"
+},
+{
+    "id"        : "proportion",
+    "laTex"     : "∷",
+    "name"      : "Proportion"
+},
+{
+    "id"        : "therefor",
+    "laTex"     : "∴",
+    "name"      : "Therefore"
+},
+{
+    "id"        : "endofproof",
+    "laTex"     : "∎",
+    "name"      : "End of Proof"
+}]

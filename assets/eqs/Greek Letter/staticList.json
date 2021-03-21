@@ -1,0 +1,120 @@
+[{
+    "id"        : "alpha",
+    "laTex"     : "α",
+    "name"      : "Alpha"
+},
+{
+    "id"        : "beta",
+    "laTex"     : "β",
+    "name"      : "Beta"
+},
+{
+    "id"        : "gamma",
+    "laTex"     : "γ",
+    "name"      : "Gamma"
+},
+{
+    "id"        : "delta",
+    "laTex"     : "δ",
+    "name"      : "Delta"
+},
+{
+    "id"        : "epsilon",
+    "laTex"     : "ε",
+    "name"      : "Epsilon"
+},
+{
+    "id"        : "zeta",
+    "laTex"     : "ζ",
+    "name"      : "Zeta"
+},
+{
+    "id"        : "eta",
+    "laTex"     : "η",
+    "name"      : "Eta"
+},
+{
+    "id"        : "theta",
+    "laTex"     : "θ",
+    "name"      : "Theta"
+},
+{
+    "id"        : "iota",
+    "laTex"     : "ι",
+    "name"      : "Iota"
+},
+{
+    "id"        : "kappa",
+    "laTex"     : "κ",
+    "name"      : "Kappa"
+},
+{
+    "id"        : "lambda",
+    "laTex"     : "λ",
+    "name"      : "Lambda"
+},
+{
+    "id"        : "mu",
+    "laTex"     : "μ",
+    "name"      : "Mu"
+},
+{
+    "id"        : "nu",
+    "laTex"     : "ν",
+    "name"      : "Nu"
+},
+{
+    "id"        : "xi",
+    "laTex"     : "ξ",
+    "name"      : "Xi"
+},
+{
+    "id"        : "omicron",
+    "laTex"     : "o",
+    "name"      : "Omicron"
+},
+{
+    "id"        : "pi",
+    "laTex"     : "π",
+    "name"      : "Pi"
+},
+{
+    "id"        : "rho",
+    "laTex"     : "ρ",
+    "name"      : "Rho"
+},
+{
+    "id"        : "sigma",
+    "laTex"     : "σ",
+    "name"      : "Sigma"
+},
+{
+    "id"        : "tau",
+    "laTex"     : "τ",
+    "name"      : "Tau"
+},
+{
+    "id"        : "upsilon",
+    "laTex"     : "υ",
+    "name"      : "Upsilon"
+},
+{
+    "id"        : "phi",
+    "laTex"     : "φ",
+    "name"      : "Phi"
+},
+{
+    "id"        : "chi",
+    "laTex"     : "χ",
+    "name"      : "Chi"
+},
+{
+    "id"        : "psi",
+    "laTex"     : "ψ",
+    "name"      : "Psi"
+},
+{
+    "id"        : "omega",
+    "laTex"     : "ω",
+    "name"      : "Omega"
+}]
