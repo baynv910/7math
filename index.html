@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./lib/css/style.css" />
+    <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
 </head>
 <body onload="loadFraction('operatorTab')">
     <div class="checkingBrowser active">
@@ -22,10 +23,8 @@
         </div>
         <div class="row bg-light" style="border-bottom: 3.5px solid #0009; animation: fadeAnimate 0.5s backwards;">
             <div class="col-lg-7 row">
-
                 <!----------- FORMAT TAB --------------------->
                 <div class="col-sm-2 col-2 row text-center formatTab">
-                    
                     <!--------------------- Format Tab: Font Size --------------------->
                     <div class="col-12 d-block p-0">
                         <label class="mb-0">Font Size</label>
@@ -44,41 +43,7 @@
                     <button class="col-12 btn btn-outline-secondary m-1" id="bold-button" title="Bold"><b>B</b></button>
                     <button class="col-12 btn btn-outline-secondary m-1" id="underline-button" title="Underline"><u>U</u></button>
                     <button class="col-12 btn btn-outline-secondary m-1" id="italic-button" title="Italic"><i>I</i></button>
-                    <button style="display: none;" class="col-12 btn btn-outline-secondary m-1" id="list-button" title="Bullet List">List</button>
-                    <button style="display: none;" class="col-12 btn btn-outline-secondary m-1" id="image-button" title="Picture">Picture</button>
-
-                </div>
-
-                <!-- <div class="col-sm-10 col-10 p-3">
-                    <div id="suggestMenu">
-                        <div class="menuItemTab">
-                            <span id="tab1" class="btn btn-light active" title="General Tab"
-                            style="overflow: hidden; width: 40px; height: 36px;">
-                            <img src="./assets/icons.png" style="margin-left: -1185px; margin-top: -446px;" alt="">
-                            </span>
-                            <span id="tab2" class="btn btn-secondary">Tab 2</span>
-                            <span id="tab3" class="btn btn-secondary">Tab 3</span>
-                            <span id="tab4" class="btn btn-secondary">Tab 4</span>
-                        </div>
-
-                        <div class="menuItemList">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                        <button class="menuItem" onclick="execCmd(this.innerHTML)" title="fraction numerator a over denominator b end fraction">
-                                            <math><mfrac><mn>x</mn><mn>y</mn></mfrac></math>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <button class="menuItem" onclick="execCmd(this.innerHTML)" title="fraction numerator a over denominator b end fraction">
-                                            <math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mi>x</mi></msqrt></math>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div> -->
+                </div> 
 
                 <!----------- FRACTION ICONS TAB --------------------->
                 <div class="col-sm-10 col-10 p-3">
@@ -93,321 +58,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 structureTab row text-center d-inline-block">
-                <!----------- STRUCTURE TAB --------------------->
-                <div class="bg-dark text-light text-center col-12">Template Equations</div>
-                
-                <div class="col-12 p-0">
-                    <!--------------------- STRUCTURE TAB: Fraction -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Fraction"><img src="./assets/images/Structures/fraction.png" alt="fraction"></button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header"><span>Common Fraction</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="dy over dx">
-                                    <math><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="cap delta y over cap delta x">
-                                    <math><mfrac><mrow><mi>&#x394;</mi><mi>y</mi></mrow><mrow><mi>&#x394;</mi><mi>x</mi></mrow></mfrac></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="partial y over partial x">
-                                    <math><mfrac><mrow><mo>&#x2202;</mo><mi>y</mi></mrow><mrow><mo>&#x2202;</mo><mi>x</mi></mrow></mfrac></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="delta y over delta x">
-                                    <math><mfrac><mrow><mi>&#x3B4;</mi><mi>y</mi></mrow><mrow><mi>&#x3B4;</mi><mi>x</mi></mrow></mfrac></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="pi Over 2">
-                                    <math><mfrac><mi>&#x3C0;</mi><mn>2</mn></mfrac></math>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <!--------------------- STRUCTURE TAB: Scripts -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Script"><img src="./assets/images/Structures/script.png" alt="script"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Common Subscripts and Superscripts</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="x subscript y squared">
-                                    <math><msub><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup></msub></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="e to the minus i omega t">
-                                    <math><msup><mi>e</mi><mrow><mo>-</mo><mi>i</mi><mi>&#x3C9;</mi><mi>t</mi></mrow></msup></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="x squared">
-                                    <math><msup><mi>x</mi><mn>2</mn></msup></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Y left subscript n left subscript 1">
-                                    <math><mmultiscripts><mtext>Y</mtext><mprescripts/><mn>1</mn><mi>n</mi></mmultiscripts></math>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!--------------------- STRUCTURE TAB: Radicals -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Radical"><img src="./assets/images/Structures/radical.png" alt="radical"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Common Radicals</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Right hand side of Quadratic Formula">
-                                    <math><mfrac><mrow><mo>-</mo><mi>b</mi><mo>&#xB1;</mo><msqrt><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>a</mi><mi>c</mi></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Squared root of a squared plus b squared">
-                                    <math><msqrt><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Cubic root of sin x squared plus cos x squared">
-                                    <math><mroot><mrow><mi>s</mi><mi>i</mi><msup><mi>n</mi><mn>2</mn></msup><mi>x</mi><mo>+</mo><mi>c</mi><mi>o</mi><msup><mi>s</mi><mn>2</mn></msup><mi>x</mi></mrow><mn>3</mn></mroot></math>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!--------------------- STRUCTURE TAB: Integrals -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Integral"><img src="./assets/images/Structures/integral.png" alt="integral"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Integrals</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Integral">
-                                    <math><mo>&#x222B;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Integral with Limits">
-                                    <math><msubsup><mo>&#x222B;</mo><mi>a</mi><mi>b</mi></msubsup></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Double Integral">
-                                    <math><mo>&#x222C;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Double Integral with Limits">
-                                    <math><msubsup><mo>&#x222C;</mo><mi>a</mi><mi>b</mi></msubsup></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Trible Integral">
-                                    <math><mo>&#x222D;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Trible Integral with Limits">
-                                    <math><msubsup><mo>&#x222D;</mo><mi>a</mi><mi>b</mi></msubsup></math>
-                                </button>
-                            </li>
-                            <li class="dropdown-header"><span>Contour Integrals</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Contour Integral">
-                                    <math><mo>&#x222E;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Contour Integral with Limits">
-                                    <math><msubsup><mo>&#x222E;</mo><mi>a</mi><mi>b</mi></msubsup></math>
-                                </button>
-                            </li>
-                            <li class="dropdown-header"><span>Differencials</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Differencial x">
-                                    <math><mi>d</mi><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Differencial y">
-                                    <math><mi>d</mi><mi>y</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Differencial θ">
-                                    <math><mi>d</mi><mi>&#x3B8;</mi></math>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-12 p-0">
-                    <!--------------------- STRUCTURE TAB: Large Operator -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Large Operator"><img src="./assets/images/Structures/largeOperator.png" alt="largeOperator"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Summations</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Summation">
-                                    <math><mo>&#x2211;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Summation with Limits">
-                                    <math><munderover><mo>&#x2211;</mo><mi>a</mi><mi>b</mi></munderover></math>
-                                </button>
-                            </li>
-                            <li class="dropdown-header"><span>Products and Co-Products</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Product">
-                                    <math><mo>&#x220F;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Product with Limits">
-                                    <math><munderover><mo>&#x220F;</mo><mi>a</mi><mi>b</mi></munderover></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="CoProduct">
-                                    <math><mo>&#x2210;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="CoProduct with Limits">
-                                    <math><munderover><mo>&#x2210;</mo><mi>a</mi><mi>b</mi></munderover></math>
-                                </button>
-                            </li>
-                            <li class="dropdown-header"><span>Unions and Intersections</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Union">
-                                    <math><mo largeop="true">&#x222A;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Union with Limits">
-                                    <math><munderover><mo largeop="true">&#x222A;</mo><mi>a</mi><mi>b</mi></munderover></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Intersection">
-                                    <math><mo largeop="true">&#x2229;</mo></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Intersection with Limits">
-                                    <math><munderover><mo largeop="true">&#x2229;</mo><mi>a</mi><mi>b</mi></munderover></math>
-                                </button>
-                            </li>
-                            <!-- <li class="dropdown-header"><span>Other Large Operators</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Logical Or">
-                                    <math><mi>\bigvee</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Logical Or with Limits">\({\bigvee_a^b}\)</button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Logical And">\({\bigwedge}\)</button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Logical And with Limits">\({\bigwedge_a^b}\)</button>
-                            </li> -->
-                            <li class="dropdown-header"><span>Common Large Operators</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Summation over k of n choose k">
-                                    <math><munderover><mo>&#x2211;</mo><mi>a</mi><mi>b</mi></munderover><mfenced><mtable><mtr><mtd><mi>n</mi></mtd></mtr><mtr><mtd><mi>k</mi></mtd></mtr></mtable></mfenced></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Summation from i equal zero to n">
-                                    <math><munderover><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Product Example">
-                                    <math><munderover><mo>&#x220F;</mo><mi>a</mi><mi>b</mi></munderover><msub><mi>A</mi><mi>k</mi></msub></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="Union Example">
-                                    <math><munderover><mo largeop="true">&#x222A;</mo><mi>a</mi><mi>b</mi></munderover><mo>(</mo><msub><mi>X</mi><mi>n</mi></msub><mo>&#x2229;</mo><msub><mi>Y</mi><mi>n</mi></msub><mo>)</mo></math>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!--------------------- STRUCTURE TAB: Bracket -->
-                    <!-- <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Bracket"><img src="./assets/images/Structures/bracket.png" alt="bracket"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Brackets</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mrow><mi>(a</mi><mo>+</mo><mi>b)</mi></mrow></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mfenced><mrow><mi>[a</mi><mo>+</mo><mi>b]</mi></mrow></mfenced></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mfenced><mrow><mi>{a</mi><mo>+</mo><mi>b}</mi></mrow></mfenced></math>
-                                </button>
-                            </li> -->
-
-                            <!-- <li class="dropdown-header"><span>Cases and Stacks</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    {\begin{cases}{ax}\\{by}\end{cases}}
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    \({\begin{cases}{ax}\\{by}\\{cz}\end{cases}}\)
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    \({\left(\begin{array}{c}a\\ b\end{array}\right)}\)
-                                </button>
-                            </li>
-                        </ul>
-                    </div> -->
-
-                    <!--------------------- STRUCTURE TAB: Functions -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Function"><img src="./assets/images/Structures/function.png" alt="function"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Trigonometric Functions</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>sin</mi><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>cos</mi><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>tan</mi><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>csc</mi><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>sec</mi><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>cot</mi><mi>x</mi></math>
-                                </button>
-                            </li>
-
-                            <li class="dropdown-header"><span>Inverse Functions</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><msup><mi>cos</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><msup><mi>csc</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><msup><mi>sec</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>x</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><msup><mi>cot</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>x</mi></math>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!--------------------- STRUCTURE TAB: Limit & Log -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Limit And Log"><img src="./assets/images/Structures/limitAndLog.png" alt="limitAndLog"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Functions</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><msub><mi>log</mi><mi>a</mi></msub><mi>b</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>log</mi><mi>a</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mi>ln</mi><mi>a</mi></math>
-                                </button>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><munder><mi>lim</mi><mrow><mi>x</mi><mo>&#x2192;</mo><mn>0</mn></mrow></munder><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup></math>
-                                </button>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <!--------------------- STRUCTURE TAB: Matrix -->
-                    <div class="dropdown d-inline">
-                        <button class="dropdown-toggle" data-toggle="dropdown" title="Matrix"><img src="./assets/images/Structures/matrix.png" alt="matrix"></button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header"><span>Sparse Matrices</span></li>
-                            <li>
-                                <button class="p-1" onclick="execCmd(this.innerHTML)" title="">
-                                    <math><mfenced open="[" close="]"><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></mfenced></math>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <!----------- STRUCTURE TAB (TEMPLATE EQUATION) --------------------->
+            <div class="col-lg-5 structureTab row text-center d-inline-block" include-html="menu-include/structureTab.html"></div>
         </div>
         <div style="animation: fadeAnimate 0.1s backwards 0.5s;" id="editor-container" style="background: #eee">
-            <div>
-                <label class="text-light bg-info p-2 mt-2 mb-0">Editor</label>
+            <div class="mt-2">
+                <input class="btn btn-primary p-2 mb-1" type="file" id="myFile" accept=".jpg, .png, .jpeg" name="filename">
+                <input class="btn btn-success" type="submit" onclick="execFileUpload()" value="Read file">
             </div>
             <div id="editor-text" autofocus contenteditable="true" placeholder="Start writing ..." spellcheck="false" style="background: #fff;"></div>
             <p class="submitBtn">
@@ -415,16 +73,39 @@
             </p>
         </div>
     </div>
-
-    <!-- <div>
-        <div id="inputMathML" contenteditable="true" style="width: 100%; height: 200px; background: #ccc; margin-bottom: 50px; overflow: scroll;">
-        </div>
-        <div id="showTxt" contenteditable="true" style="width: 100%; height: 200px; background: #eee; margin-bottom: 50px; overflow: scroll;">
-
-        </div>
-    </div> -->
     <script src="./lib/js/jquery-3.5.1.js"></script>
     <script src="./lib/js/bootstrap.bundle.min.js"></script>
     <script src="./lib/js/main.js"></script>
+    <script>
+    // include html
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("include-html");
+            if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("include-html");
+                includeHTML();
+                }
+            }      
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+            }
+        }
+    };
+    includeHTML();
+    </script>
 </body>
 </html>
