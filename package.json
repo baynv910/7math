@@ -1,0 +1,26 @@
+{
+  "name": "7math",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baynv910/7math.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baynv910/7math/issues"
+  },
+  "homepage": "https://github.com/baynv910/7math#readme",
+  "dependencies": {
+    "firebase": "^8.4.3",
+    "firebase-tools": "^9.10.0"
+  }
+}
