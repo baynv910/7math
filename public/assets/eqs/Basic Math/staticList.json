@@ -1,186 +1,186 @@
 [{
     "id"        : "pm",
-    "laTex"     : "±",
+    "symbol"     : "±",
     "name"      : "Plus Minus"
 },
 {
     "id"        : "infty",
-    "laTex"     : "∞",
+    "symbol"     : "∞",
     "name"      : "Infinity"
 },
 {
     "id"        : "equal",
-    "laTex"     : "=",
+    "symbol"     : "=",
     "name"      : "Equal"
 },
 {
     "id"        : "neq",
-    "laTex"     : "≠",
+    "symbol"     : "≠",
     "name"      : "Not Equal To"
 },
 {
     "id"        : "approximately",
-    "laTex"     : "~",
+    "symbol"     : "~",
     "name"      : "Approximately"
 },
 {
     "id"        : "times",
-    "laTex"     : "×",
+    "symbol"     : "×",
     "name"      : "Multiplication Sign"
 },
 {
     "id"        : "div",
-    "laTex"     : "÷",
+    "symbol"     : "÷",
     "name"      : "Division Sign"
 },
 {
     "id"        : "factorial",
-    "laTex"     : "!",
+    "symbol"     : "!",
     "name"      : "Factorial"
 },
 {
     "id"        : "propto",
-    "laTex"     : "∝",
+    "symbol"     : "∝",
     "name"      : "Proportional To"
 },
 {
     "id"        : "lessthan",
-    "laTex"     : "&lt;",
+    "symbol"     : "&lt;",
     "name"      : "Less Than"
 },
 {
     "id"        : "ll",
-    "laTex"     : "≪",
+    "symbol"     : "≪",
     "name"      : "Much Less Than"
 },
 {
     "id"        : "greaterthan",
-    "laTex"     : "&gt;",
+    "symbol"     : "&gt;",
     "name"      : "Greater Than"
 },
 {
     "id"        : "gg",
-    "laTex"     : "≫",
+    "symbol"     : "≫",
     "name"      : "Much Greater Than"
 },
 {
     "id"        : "leq",
-    "laTex"     : "≤",
+    "symbol"     : "≤",
     "name"      : "Less Than Or Equal To"
 },
 {
     "id"        : "geq",
-    "laTex"     : "≥",
+    "symbol"     : "≥",
     "name"      : "Greater Than Or Equal To"
 },
 {
     "id"        : "mp",
-    "laTex"     : "∓",
+    "symbol"     : "∓",
     "name"      : "Minus Plus"
 },
 {
     "id"        : "cong",
-    "laTex"     : "≅",
+    "symbol"     : "≅",
     "name"      : "Approximately Equal To"
 },
 {
     "id"        : "approx",
-    "laTex"     : "≈",
+    "symbol"     : "≈",
     "name"      : "Almost Equal To (Asymptotic To)"
 },
 {
     "id"        : "equiv",
-    "laTex"     : "≡",
+    "symbol"     : "≡",
     "name"      : "Identical To"
 },
 {
     "id"        : "forall",
-    "laTex"     : "∀",
+    "symbol"     : "∀",
     "name"      : "For All"
 },
 {
     "id"        : "complement",
-    "laTex"     : "∁",
+    "symbol"     : "∁",
     "name"      : "Complement"
 },
 {
     "id"        : "partial",
-    "laTex"     : "∂",
+    "symbol"     : "∂",
     "name"      : "Partial Differential"
 },
 {
     "id"        : "sqrt",
-    "laTex"     : "√",
+    "symbol"     : "√",
     "name"      : "Radical Sign"
 },
 {
     "id"        : "cbrt",
-    "laTex"     : "∛",
+    "symbol"     : "∛",
     "name"      : "Cube Root"
 },
 {
     "id"        : "qdrt",
-    "laTex"     : "∜",
+    "symbol"     : "∜",
     "name"      : "Fourth Root"
 },
 {
     "id"        : "cup",
-    "laTex"     : "∪",
+    "symbol"     : "∪",
     "name"      : "Union"
 },
 {
     "id"        : "cap",
-    "laTex"     : "∩",
+    "symbol"     : "∩",
     "name"      : "Intersection"
 },
 {
     "id"        : "emptyset",
-    "laTex"     : "∅",
+    "symbol"     : "∅",
     "name"      : "Empty Set"
 },
 {
     "id"        : "percentage",
-    "laTex"     : "%",
+    "symbol"     : "%",
     "name"      : "Percentage"
 },
 {
     "id"        : "degree",
-    "laTex"     : "°",
+    "symbol"     : "°",
     "name"      : "Degrees"
 },
 {
     "id"        : "degf",
-    "laTex"     : "℉",
+    "symbol"     : "℉",
     "name"      : "Degrees Fahreheit"
 },
 {
     "id"        : "degc",
-    "laTex"     : "℃",
+    "symbol"     : "℃",
     "name"      : "Degrees Celcius"
 },
 {
     "id"        : "inc",
-    "laTex"     : "∆",
+    "symbol"     : "∆",
     "name"      : "Increment"
 },
 {
     "id"        : "nabla",
-    "laTex"     : "∇",
+    "symbol"     : "∇",
     "name"      : "Nabla"
 },
 {
     "id"        : "exists",
-    "laTex"     : "∃",
+    "symbol"     : "∃",
     "name"      : "There exists"
 },
 {
     "id"        : "theredoesnotexist",
-    "laTex"     : "∄",
+    "symbol"     : "∄",
     "name"      : "There Does Not Exist"
 },
 {
     "id"        : "in",
-    "laTex"     : "∈",
+    "symbol"     : "∈",
     "name"      : "Element Of"
 }
 ]

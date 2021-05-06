@@ -1,75 +1,75 @@
 [{
     "id"        : "rightangle",
-    "laTex"     : "∟",
+    "symbol"     : "∟",
     "name"      : "Right Angle"
 },
 {
     "id"        : "angle",
-    "laTex"     : "∠",
+    "symbol"     : "∠",
     "name"      : "Angle"
 },
 {
     "id"        : "measuredangle",
-    "laTex"     : "∡",
+    "symbol"     : "∡",
     "name"      : "Measured Angle"
 },
 {
     "id"        : "sphericalangle",
-    "laTex"     : "∢",
+    "symbol"     : "∢",
     "name"      : "Spherical Angle"
 },
 {
     "id"        : "rightanglewitharc",
-    "laTex"     : "⊾",
+    "symbol"     : "⊾",
     "name"      : "Right Angle with Arc"
 },
 {
     "id"        : "righttriangle",
-    "laTex"     : "⊿",
+    "symbol"     : "⊿",
     "name"      : "Right Triangle"
 },
 {
     "id"        : "equalandparallelto",
-    "laTex"     : "⋕",
+    "symbol"     : "⋕",
     "name"      : "Equal and Parallel to"
 },
 {
     "id"        : "perpendicularto",
-    "laTex"     : "⊥",
+    "symbol"     : "⊥",
     "name"      : "Perpendicular to"
 },
 {
     "id"        : "doesnotdivide",
-    "laTex"     : "∤",
+    "symbol"     : "∤",
     "name"      : "Does Not Divide"
 },
 {
     "id"        : "parallelto",
-    "laTex"     : "∥",
+    "symbol"     : "∥",
     "name"      : "Parallel to"
 },
 {
     "id"        : "notparallelto",
-    "laTex"     : "∦",
+    "symbol"     : "∦",
     "name"      : "Not Parallel To"
 },
 {
     "id"        : "ratio",
-    "laTex"     : "∶",
+    "symbol"     : "∶",
     "name"      : "Ratio"
 },
 {
     "id"        : "proportion",
-    "laTex"     : "∷",
+    "symbol"     : "∷",
     "name"      : "Proportion"
 },
 {
     "id"        : "therefor",
-    "laTex"     : "∴",
+    "symbol"     : "∴",
     "name"      : "Therefore"
 },
 {
     "id"        : "endofproof",
-    "laTex"     : "∎",
+    "symbol"     : "∎",
     "name"      : "End of Proof"
 }]

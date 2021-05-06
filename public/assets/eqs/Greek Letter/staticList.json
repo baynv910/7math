@@ -1,120 +1,120 @@
 [{
     "id"        : "alpha",
-    "laTex"     : "α",
+    "symbol"     : "α",
     "name"      : "Alpha"
 },
 {
     "id"        : "beta",
-    "laTex"     : "β",
+    "symbol"     : "β",
     "name"      : "Beta"
 },
 {
     "id"        : "gamma",
-    "laTex"     : "γ",
+    "symbol"     : "γ",
     "name"      : "Gamma"
 },
 {
     "id"        : "delta",
-    "laTex"     : "δ",
+    "symbol"     : "δ",
     "name"      : "Delta"
 },
 {
     "id"        : "epsilon",
-    "laTex"     : "ε",
+    "symbol"     : "ε",
     "name"      : "Epsilon"
 },
 {
     "id"        : "zeta",
-    "laTex"     : "ζ",
+    "symbol"     : "ζ",
     "name"      : "Zeta"
 },
 {
     "id"        : "eta",
-    "laTex"     : "η",
+    "symbol"     : "η",
     "name"      : "Eta"
 },
 {
     "id"        : "theta",
-    "laTex"     : "θ",
+    "symbol"     : "θ",
     "name"      : "Theta"
 },
 {
     "id"        : "iota",
-    "laTex"     : "ι",
+    "symbol"     : "ι",
     "name"      : "Iota"
 },
 {
     "id"        : "kappa",
-    "laTex"     : "κ",
+    "symbol"     : "κ",
     "name"      : "Kappa"
 },
 {
     "id"        : "lambda",
-    "laTex"     : "λ",
+    "symbol"     : "λ",
     "name"      : "Lambda"
 },
 {
     "id"        : "mu",
-    "laTex"     : "μ",
+    "symbol"     : "μ",
     "name"      : "Mu"
 },
 {
     "id"        : "nu",
-    "laTex"     : "ν",
+    "symbol"     : "ν",
     "name"      : "Nu"
 },
 {
     "id"        : "xi",
-    "laTex"     : "ξ",
+    "symbol"     : "ξ",
     "name"      : "Xi"
 },
 {
     "id"        : "omicron",
-    "laTex"     : "o",
+    "symbol"     : "o",
     "name"      : "Omicron"
 },
 {
     "id"        : "pi",
-    "laTex"     : "π",
+    "symbol"     : "π",
     "name"      : "Pi"
 },
 {
     "id"        : "rho",
-    "laTex"     : "ρ",
+    "symbol"     : "ρ",
     "name"      : "Rho"
 },
 {
     "id"        : "sigma",
-    "laTex"     : "σ",
+    "symbol"     : "σ",
     "name"      : "Sigma"
 },
 {
     "id"        : "tau",
-    "laTex"     : "τ",
+    "symbol"     : "τ",
     "name"      : "Tau"
 },
 {
     "id"        : "upsilon",
-    "laTex"     : "υ",
+    "symbol"     : "υ",
     "name"      : "Upsilon"
 },
 {
     "id"        : "phi",
-    "laTex"     : "φ",
+    "symbol"     : "φ",
     "name"      : "Phi"
 },
 {
     "id"        : "chi",
-    "laTex"     : "χ",
+    "symbol"     : "χ",
     "name"      : "Chi"
 },
 {
     "id"        : "psi",
-    "laTex"     : "ψ",
+    "symbol"     : "ψ",
     "name"      : "Psi"
 },
 {
     "id"        : "omega",
-    "laTex"     : "ω",
+    "symbol"     : "ω",
     "name"      : "Omega"
 }]

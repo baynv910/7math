@@ -1,93 +1,90 @@
 [{
     "id"        : "plus",
-    "laTex"     : "<mo>+</mo>",
-    "name"      : "Plus",
-    "fileName"  : "Operator/Plus.png"
+    "symbol"     : "+",
+    "name"      : "Plus"
 },
 {
     "id"        : "minus",
-    "laTex"     : "−",
-    "name"      : "Minus",
-    "fileName"  : "Operator/minus.png"
+    "symbol"     : "−",
+    "name"      : "Minus"
 },
 {
     "id"        : "div",
-    "laTex"     : "÷",
-    "name"      : "Division Sign",
-    "fileName"  : "Operator/div.png"
+    "symbol"     : "÷",
+    "name"      : "Division Sign"
 },
 {
     "id"        : "times",
-    "laTex"     : "×",
+    "symbol"     : "×",
     "name"      : "Mutiplication Sign"
 },
 {
     "id"        : "pm",
-    "laTex"     : "±",
+    "symbol"     : "±",
     "name"      : "Plus Minus"
 },
 {
     "id"        : "mp",
-    "laTex"     : "∓",
+    "symbol"     : "∓",
     "name"      : "Minus Plus"
 },
 {
     "id"        : "propto",
-    "laTex"     : "∝",
+    "symbol"     : "∝",
     "name"      : "Proportional To"
 },
 {
     "id"        : "ldiv",
-    "laTex"     : "∕",
+    "symbol"     : "∕",
     "name"      : "Division Slash"
 },
 {
     "id"        : "ast",
-    "laTex"     : "∗",
+    "symbol"     : "∗",
     "name"      : "Asterisk Operator"
 },
 {
     "id"        : "circ",
-    "laTex"     : "∘",
+    "symbol"     : "∘",
     "name"      : "Composite Function"
 },
 {
     "id"        : "bullet",
-    "laTex"     : "∙",
+    "symbol"     : "∙",
     "name"      : "Composite Function"
 },
 {
     "id"        : "cap",
-    "laTex"     : "∩",
+    "symbol"     : "∩",
     "name"      : "Intersection"
 },
 {
     "id"        : "cup",
-    "laTex"     : "∪",
+    "symbol"     : "∪",
     "name"      : "Union"
 },
 {
     "id"        : "uplus",
-    "laTex"     : "⊎",
+    "symbol"     : "⊎",
     "name"      : "MULTISET UNION"
 },
 {
     "id"        : "sqcap",
-    "laTex"     : "⊓",
+    "symbol"     : "⊓",
     "name"      : "SQUARE CAP"
 },
 {
     "id"        : "sqcup",
-    "laTex"     : "⊔",
+    "symbol"     : "⊔",
     "name"      : "SQUARE CUP"
 },
 {
     "id"        : "wedge",
-    "laTex"     : "⋀",
+    "symbol"     : "⋀",
     "name"      : "LOGICAL AND"
 },
 {
     "id"        : "vee",
-    "laTex"     : "⋁",
+    "symbol"     : "⋁",
     "name"      : "LOGICAL OR"
 }]

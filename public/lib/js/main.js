@@ -53,7 +53,7 @@ const loadFraction = (tabName) => {
         data.forEach(frac => {
            items.push(`<button class='fraction-item'
             title='${frac.name}'
-            onclick="execCmd(this.innerHTML)" >${frac.laTex}</button>`);
+            onclick="execCmd(this.innerHTML)" >${frac.symbol}</button>`);
         });
 
         $( "<div/>", {
@@ -179,17 +179,27 @@ function FindCurrentTags() {
 // Handle File Upload
 execFileUpload = () => {
     let linkFile = document.querySelector('#linkMyFile').value;
+    let btnReadFile = document.querySelector('#btnReadFile');
+
     console.log(linkFile);
     if (linkFile == null || linkFile == '')
        alert('Please upload a file!');
+    else {
+        btnReadFile.disabled = 'true';
+        btnReadFile.value = 'Reading';
     
-    Tesseract.recognize(
-        `${linkFile}`,
-        'en',
-        { logger: m => console.log(m) }
-        ).then(({ data: { text } }) => {
-        console.log(text);
-    })
+        Tesseract.recognize(
+            `${linkFile}`,
+            'vie',
+            { logger: m => console.log(m) }
+            ).then(({ data: { text } }) => {
+            console.log('Completed! Check data in your output box!');
+            // Update button status
+            btnReadFile.disabled = !btnReadFile.disabled;
+            btnReadFile.value = 'Read File';
+            execCmd(text);
+        })
+    }
 }
 
 // Handle submit

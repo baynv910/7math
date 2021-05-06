@@ -1,110 +1,110 @@
 [{
     "id"        : "gets",
-    "laTex"     : "←",
+    "symbol"     : "←",
     "name"      : "Left Arrow"
 },
 {
     "id"        : "to",
-    "laTex"     : "→",
+    "symbol"     : "→",
     "name"      : "Right Arrow"
 },
 {
     "id"        : "uparrow",
-    "laTex"     : "↑",
+    "symbol"     : "↑",
     "name"      : "Up Arrow"
 },
 {
     "id"        : "downarrow",
-    "laTex"     : "↓",
+    "symbol"     : "↓",
     "name"      : "Down Arrow"
 },
 {
     "id"        : "leftrightarrow",
-    "laTex"     : "↔",
+    "symbol"     : "↔",
     "name"      : "Left-Right Arrow"
 },
 {
     "id"        : "updownarrow",
-    "laTex"     : "↕",
+    "symbol"     : "↕",
     "name"      : "Up-Down Arrow"
 },
 {
     "id"        : "leftdoublearrow",
-    "laTex"     : "⇐",
+    "symbol"     : "⇐",
     "name"      : "Left Double Arrow"
 },
 {
     "id"        : "rightdoublearrow",
-    "laTex"     : "⇒",
+    "symbol"     : "⇒",
     "name"      : "Right Double Arrow"
 },
 {
     "id"        : "updoublearrow",
-    "laTex"     : "⇑",
+    "symbol"     : "⇑",
     "name"      : "Up Double Arrow"
 },
 {
     "id"        : "downdoublearrow",
-    "laTex"     : "⇓",
+    "symbol"     : "⇓",
     "name"      : "Down Double Arrow"
 },
 {
     "id"        : "leftrightdoublearrow",
-    "laTex"     : "⇔",
+    "symbol"     : "⇔",
     "name"      : "Left-Right Double Arrow"
 },
 {
     "id"        : "updowndoublearrow",
-    "laTex"     : "⇕",
+    "symbol"     : "⇕",
     "name"      : "Up Down Double Arrow"
 },
 {
     "id"        : "longleftarrow",
-    "laTex"     : "⟵",
+    "symbol"     : "⟵",
     "name"      : "Long Left Arrow"
 },
 {
     "id"        : "longrightarrow",
-    "laTex"     : "⟶",
+    "symbol"     : "⟶",
     "name"      : "Long Right Arrow"
 },
 {
     "id"        : "longleftrightarrow",
-    "laTex"     : "⟷",
+    "symbol"     : "⟷",
     "name"      : "Long Left-Right Arrow"
 },
 {
     "id"        : "longleftdoublearrow",
-    "laTex"     : "⟸",
+    "symbol"     : "⟸",
     "name"      : "Long Left Double Arrow"
 },
 {
     "id"        : "longrightdoublearrow",
-    "laTex"     : "⟹",
+    "symbol"     : "⟹",
     "name"      : "Long Right Double Arrow"
 },
 {
     "id"        : "longleftrightdoublearrow",
-    "laTex"     : "⟺",
+    "symbol"     : "⟺",
     "name"      : "Long Left-Right Double Arrow"
 },
 {
     "id"        : "northeastarrow",
-    "laTex"     : "↗",
+    "symbol"     : "↗",
     "name"      : "North East Arrow"
 },
 {
     "id"        : "northwestarrow",
-    "laTex"     : "&#8598;",
+    "symbol"     : "&#8598;",
     "name"      : "North West Arrow"
 },
 {
     "id"        : "southeastarrow",
-    "laTex"     : "↘",
+    "symbol"     : "↘",
     "name"      : "South East Arrow"
 },
 {
     "id"        : "southwestarrow",
-    "laTex"     : "↙",
+    "symbol"     : "↙",
     "name"      : "South West Arrow"
 }]

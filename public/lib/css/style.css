@@ -189,3 +189,11 @@ ul.dropdown-menu .dropdown-header {
 .menuItem:hover {
     transform: scale(1.05);
 }
+
+#uploader {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    border-radius: 5px;
+    display: none;
+}

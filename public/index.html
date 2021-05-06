@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Math | Easy Math - Easy Life</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./lib/css/style.css" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./lib/css/style.css" type="text/css" />
     <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
 </head>
 <body onload="loadFraction('operatorTab')">
     <div class="checkingBrowser active">
-        <h3>Sory! Please access this page by using <b class="text-warning">FireFox</b> or <b class="text-warning">Safari</b> (which enable <b class="text-warning">MathML</b> )</h3>
+        <h3>Sory! Please access this page by using <b class="text-warning">FireFox</b> or <b class="text-warning">Safari</b> (which enable <b class="text-warning">MathML</b>)</h3>
     </div>
+
     <div class="container-fluid">
         <div class="row text-white">
             <a href="/">
@@ -60,13 +61,14 @@
             </div>
 
             <!----------- STRUCTURE TAB (TEMPLATE EQUATION) --------------------->
-            <div class="col-lg-5 structureTab row text-center d-inline-block" include-html="menu-include/structureTab.html"></div>
+            <div class="col-lg-5 structureTab row text-center d-inline-block" include-html="./menu-include/structureTab.html"></div>
         </div>
         <div style="animation: fadeAnimate 0.1s backwards 0.5s;" id="editor-container" style="background: #eee">
             <div class="mt-2 form-group">
-                <input class="btn btn-primary p-1" type="file" id="myFile" accept=".jpg, .jpeg, .png" title="Choose a text image file">
-                <input type="text" style="display: none;" disabled id="linkMyFile" />
-                <input class="btn btn-success" type="submit" onclick="execFileUpload()" value="Read file">
+                <progress class="p-1" value="0" max="100" id="uploader">0%</progress> <br>
+                <input class="btn btn-light p-1" style="width: 300px;" type="file" id="myFile" accept=".jpg, .png, .bmp, .pbm" title="Choose a text image file">
+                <input type="text" id="linkMyFile" disabled style="display: none;" />
+                <input class="btn btn-success" id="btnReadFile" type="button" onclick="execFileUpload()" value="Read file">
             </div>
             <div id="editor-text" autofocus contenteditable="true" placeholder="Start writing ..." spellcheck="false" style="background: #fff;"></div>
             <p class="submitBtn">
@@ -140,29 +142,38 @@
             var initApp = function() {
 
                 const fileButton = document.getElementById('myFile');
+                const uploader = document.querySelector('#uploader');
                 if (!!fileButton) {
                     fileButton.addEventListener('change', function(e) {
+                        uploader.style.display = 'inline';
+
                         // get file
                         let file = e.target.files[0];
 
+                        uploader.value = 10;
+
                         // create a storage Ref
-                        let storageRef = firebase.storage().ref('images/' + file.name + Date());
+                        let storageRef = firebase.storage().ref('images/' + file.name);
 
                         // upload file
                         var task = storageRef.put(file).then((snapshot) => {
                                 console.log('Uploaded', snapshot.totalBytes, 'bytes.');
+                                let percentage = snapshot.bytesTransferred / snapshot.totalBytes * 100;
+                                uploader.value = percentage;
                                 snapshot.ref.getDownloadURL().then(function(url) {
-                                console.log('File available at', url);
-                                document.querySelector('#linkMyFile').value = url;
+                                    console.log('File available at', url);
+
+                                    document.querySelector('#linkMyFile').value = url;
+                                    uploader.style.display = 'none';
+                                });
+                            }).catch(function(error) {
+                                console.error('Upload failed:', error);
                             });
-                        }).catch(function(error) {
-                            console.error('Upload failed:', error);
                         });
-                    });
-                }
-            };
-            window.addEventListener('load', initApp);
-        }())
+                    }
+                };
+                window.addEventListener('load', initApp);
+            }())
     </script>
 </body>
 </html>
