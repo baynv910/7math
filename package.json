@@ -1,26 +1,19 @@
 {
-  "name": "7math",
+  "name": "math-web",
   "version": "1.0.0",
-  "description": "no",
+  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/baynv910/7math.git"
-  },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/baynv910/7math/issues"
-  },
-  "homepage": "https://github.com/baynv910/7math#readme",
-  "dependencies": {
-    "firebase": "^8.4.3",
-    "firebase-tools": "^9.10.0"
-  }
+  "license": "ISC"
 }
