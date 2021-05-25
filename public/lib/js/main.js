@@ -5,7 +5,11 @@ let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return
 if (isFireFox == true || isSafari == true) {
     document.querySelector('.checkingBrowser').classList.remove('active');
 } else
- console.log('Not FireFox or Safari Browser! Then not support MathML to render this page!');
+{
+    console.log('Not FireFox or Safari Browser! Then not support MathML to render this page!');
+    document.querySelector('.container-fluid').innerHTML = '';
+}
+ 
 
  var myHeaders = new Headers();
  myHeaders.append('Access-Control-Allow-Origin', '*');
@@ -200,6 +204,11 @@ execFileUpload = () => {
             execCmd(text);
         })
     }
+}
+
+// Editor of developer
+const developerEditor = () => {
+    
 }
 
 // Handle submit

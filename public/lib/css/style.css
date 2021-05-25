@@ -50,13 +50,10 @@ body {
     color: white !important;
 }
 
-#editor-text {
+#editor-text, #editor-html,
+#latexInput {
     max-height: 260px;
     overflow: scroll;
-}
-
-#editor-text,
-#latexInput {
     outline: none;
     padding: 10px;
     overflow: auto;

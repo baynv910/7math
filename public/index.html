@@ -64,13 +64,26 @@
             <div class="col-lg-5 structureTab row text-center d-inline-block" include-html="./menu-include/structureTab.html"></div>
         </div>
         <div style="animation: fadeAnimate 0.1s backwards 0.5s;" id="editor-container" style="background: #eee">
+            
+            <!-- Read text from image -->
             <div class="mt-2 form-group">
                 <progress class="p-1" value="0" max="100" id="uploader">0%</progress> <br>
                 <input class="btn btn-light p-1" style="width: 300px;" type="file" id="myFile" accept=".jpg, .png, .bmp, .pbm" title="Choose a text image file">
                 <input type="text" id="linkMyFile" disabled style="display: none;" />
                 <input class="btn btn-success" id="btnReadFile" type="button" onclick="execFileUpload()" value="Read file">
             </div>
-            <div id="editor-text" autofocus contenteditable="true" placeholder="Start writing ..." spellcheck="false" style="background: #fff;"></div>
+
+            <!-- Input box -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#editor-text" data-toggle="tab" class="btn btn-success">Editor Text</a></li>
+                <li><a href="#editor-html" data-toggle="tab" class="btn btn-success">Editor HTML</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="editor-text" autofocus contenteditable="true" placeholder="Start writing ..." spellcheck="false" style="background: #fff;"></div>
+                <div class="tab-pane fade" id="editor-html" autofocus contenteditable="true" placeholder="Your HTML here..." spellcheck="false" style="background: #fff;"></div>
+            </div>
+            
+            <!-- Submit Button -->
             <p class="submitBtn">
                 <button class="m-3 btn btn-danger" type="submit" onclick="sendData()">Export Data</button>
             </p>
