@@ -9,7 +9,6 @@ if (isFireFox == true || isSafari == true) {
     console.log('Not FireFox or Safari Browser! Then not support MathML to render this page!');
     document.querySelector('.container-fluid').innerHTML = '';
 }
- 
 
  var myHeaders = new Headers();
  myHeaders.append('Access-Control-Allow-Origin', '*');
@@ -90,12 +89,38 @@ document.querySelector('#italic-button').addEventListener('click', function() {
 });
 
 // Check menu options to be highlighted on keyup and click event 
-document.querySelector('#editor-text').addEventListener('keyup', FindCurrentTags);
-document.querySelector('#editor-text').addEventListener('click', FindCurrentTags);
+document.querySelector('#editorText').addEventListener('keyup', () => {
+    FindCurrentTags();
+})
+
+// onclick change editor view to Text
+$('.changeEditorView #toEditorView1').click(()=> {
+    elms =  $('.structureTab button');
+    for (var i = 0; i < elms.length; i++) {
+        elms[i].disabled = false;
+        elms[i].classList.remove('disabled');
+    }
+
+    htmlTmp = document.querySelector('#editorHTML').textContent;
+    console.log(htmlTmp);
+    document.querySelector('#editorText').innerHTML = htmlTmp;
+})
+
+// onclick change editor view to HTML
+$('.changeEditorView #toEditorView2').click(()=> {
+    elms =  $('.structureTab button');
+    for (var i = 0; i < elms.length; i++) {
+        elms[i].disabled = true;
+        elms[i].classList.add('disabled');
+    }
+    document.querySelector('#editorHTML').textContent = formatHTML(`${document.querySelector("#editorText").innerHTML.replace(/\s/g, '')}`); //.replace(/\s/g, '')
+})
+
+document.querySelector('#editorText').addEventListener('click', FindCurrentTags);
 
 function FindCurrentTags() {
     // Editor container 
-    var editor_element = document.querySelector('#editor-text');
+    var editor_element = document.querySelector('#editorText');
     
     // No of ranges
     var num_ranges = window.getSelection().rangeCount;
@@ -206,13 +231,56 @@ execFileUpload = () => {
     }
 }
 
-// Editor of developer
-const developerEditor = () => {
-    
-}
-
 // Handle submit
 const sendData = () => {
-    let htmlCode = document.querySelector('#editor-text').innerHTML;
-    alert(htmlCode);
+    let htmlCode = document.querySelector('#editorText').innerHTML;
+    console.log(htmlCode);
+}
+
+// Other code
+function formatHTML(html) {
+    var indent = '\n';
+    var tab = '\t';
+    var i = 0;
+    var pre = [];
+
+    html = html
+        .replace(new RegExp('<pre>((.|\\t|\\n|\\r)+)?</pre>'), function (x) {
+            pre.push({ indent: '', tag: x });
+            return '<--TEMPPRE' + i++ + '/-->'
+        })
+        .replace(new RegExp('<[^<>]+>[^<]?', 'g'), function (x) {
+            var ret;
+            var tag = /<\/?([^\s/>]+)/.exec(x)[1];
+            var p = new RegExp('<--TEMPPRE(\\d+)/-->').exec(x);
+
+            if (p) 
+                pre[p[1]].indent = indent;
+
+            if (['area', 'base', 'br', 'col', 'command', 'embed', 'hr', 'img', 'input', 'keygen', 'link', 'menuitem', 'meta', 'param', 'source', 'track', 'wbr'].indexOf(tag) >= 0) // self closing tag
+                ret = indent + x;
+            else {
+                if (x.indexOf('</') < 0) { //open tag
+                    if (x.charAt(x.length - 1) !== '>')
+                        ret = indent + x.substr(0, x.length - 1) + indent + tab + x.substr(x.length - 1, x.length);
+                    else 
+                        ret = indent + x;
+                    !p && (indent += tab);
+                }
+                else {//close tag
+                    indent = indent.substr(0, indent.length - 1);
+                    if (x.charAt(x.length - 1) !== '>')
+                        ret =  indent + x.substr(0, x.length - 1) + indent + x.substr(x.length - 1, x.length);
+                    else
+                        ret = indent + x;
+                }
+            }
+            return ret;
+        });
+
+    for (i = pre.length; i--;) {
+        html = html.replace('<--TEMPPRE' + i + '/-->', pre[i].tag.replace('<pre>', '<pre>\n').replace('</pre>', pre[i].indent + '</pre>'));
+    }
+
+    return html.charAt(0) === '\n' ? html.substr(1, html.length - 1) : html;
 }

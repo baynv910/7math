@@ -29,7 +29,7 @@
                     <!--------------------- Format Tab: Font Size --------------------->
                     <div class="col-12 d-block p-0">
                         <label class="mb-0">Font Size</label>
-                        <select onchange="document.getElementById('editor-text').style.fontSize = this.value +'px';" class="form-control m-1" style="width: 100%;" name="fracFontSize" id="fracFontSize">
+                        <select onchange="document.getElementById('editorText').style.fontSize = this.value +'px';" class="form-control m-1" style="width: 100%;" name="fracFontSize" id="fracFontSize">
                             <option value="12">12</option>
                             <option value="20">20</option>
                             <option selected value="24">24</option>
@@ -74,13 +74,14 @@
             </div>
 
             <!-- Input box -->
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#editor-text" data-toggle="tab" class="btn btn-success">Editor Text</a></li>
-                <li><a href="#editor-html" data-toggle="tab" class="btn btn-success">Editor HTML</a></li>
+            <ul class="nav nav-tabs changeEditorView">
+                <li id="toEditorView1" class="active"><a href="#editorText" data-toggle="tab" class="btn btn-success">Editor Text</a></li>
+                <li id="toEditorView2"><a href="#editorHTML" data-toggle="tab" class="btn btn-success">Editor HTML</a></li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane fade in active" id="editor-text" autofocus contenteditable="true" placeholder="Start writing ..." spellcheck="false" style="background: #fff;"></div>
-                <div class="tab-pane fade" id="editor-html" autofocus contenteditable="true" placeholder="Your HTML here..." spellcheck="false" style="background: #fff;"></div>
+                <div class="tab-pane active" id="editorText" autofocus contenteditable="true" placeholder="Start writing ..." spellcheck="false" style="background: #fff;"></div>
+                <pre class="tab-pane fade" id="editorHTML" autofocus contenteditable="true" placeholder="Your HTML here..." spellcheck="false"
+                style="background: #eee; color:#000; font-family: Consolas; font-size: 14px; line-height: unset;"></pre>
             </div>
             
             <!-- Submit Button -->
@@ -131,6 +132,7 @@
     includeHTML();
     </script>
     <script src="./lib/js/main.js"></script>
+
     <script>
         (function() {
             console.log('connect to firebase');

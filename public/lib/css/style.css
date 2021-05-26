@@ -50,15 +50,14 @@ body {
     color: white !important;
 }
 
-#editor-text, #editor-html,
-#latexInput {
-    max-height: 260px;
+#editorText, #editorHTML {
+    max-height: 380px;
     overflow: scroll;
     outline: none;
     padding: 10px;
     overflow: auto;
     margin-top: 0px;
-    min-height: 180px;
+    min-height: 300px;
     font-size: 24px;
 }
 
@@ -144,6 +143,11 @@ body {
 .structureTab button:hover {
     transform: scale(1.3);
     box-shadow: 0px 0px 10px #131e3c;
+}
+
+.structureTab button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .row {
